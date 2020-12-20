@@ -1,13 +1,13 @@
-package com.example.kinoapp.ui.slideshow
+package com.example.kinoapp.ui.form
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SlideshowViewModel : ViewModel() {
+class FormViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is slideshow Fragment"
+//        value = "This is gallery Fragment"
     }
     val text: LiveData<String> = _text
 }

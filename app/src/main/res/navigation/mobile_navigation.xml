@@ -9,17 +9,31 @@
         android:id="@+id/nav_home"
         android:name="com.example.kinoapp.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_roomFragment"
+            app:destination="@id/roomFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.kinoapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_tickets"
+        android:name="com.example.kinoapp.ui.tickets.TicketsFragment"
+        android:label="KinoApp" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.kinoapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_invoice"
+        android:name="com.example.kinoapp.ui.invoice.InvoiceFragment"
+        android:label="KinoApp" />
+    <fragment
+        android:id="@+id/roomFragment"
+        android:name="com.example.kinoapp.ui.room.FormFragment"
+        android:label="fragment_room"
+        tools:layout="@layout/fragment_room" >
+        <action
+            android:id="@+id/action_roomFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.example.kinoapp.ui.form.FormFragment"
+        android:label="FormFragment" />
 </navigation>
