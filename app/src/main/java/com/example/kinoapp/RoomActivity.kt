@@ -1,6 +1,7 @@
 package com.example.kinoapp
 
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -83,6 +84,9 @@ class RoomActivity : AppCompatActivity() {
         val movie :String = intent.getStringExtra("TITLE")
         val time :String = intent.getStringExtra("TIME")
 
+        val sharedPreferences = getSharedPreferences("SP", Context.MODE_PRIVATE).edit()
+        sharedPreferences.putString("TITLE", movie.toString())
+        sharedPreferences.apply()
 
 
         val title: TextView = findViewById<TextView>(R.id.title)

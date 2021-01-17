@@ -51,8 +51,11 @@ class FormActivity : AppCompatActivity() {
         val button: Button = findViewById<Button>(R.id.returnButton)
         val places: TextView = findViewById<TextView>(R.id.seatsSummary)
 
-        println(getsharedPreferences.getString("SEATS", "").toString())
+            println(getsharedPreferences.getString("TITLE", "").toString())
         places.text = "Miejsca: " + getsharedPreferences.getString("SEATS", "").toString()
+
+        val titleForm: TextView =  findViewById<TextView>(R.id.titleForm)
+        titleForm.text = getsharedPreferences.getString("TITLE", "").toString()
 
         button.setOnClickListener(){
             val name = findViewById<EditText>(R.id.name)
@@ -64,8 +67,7 @@ class FormActivity : AppCompatActivity() {
             sharedPreferences.putString("EMAIL", email.text.toString())
             sharedPreferences.apply()
 
-
-            Thread {
+                Thread {
                 sendJson()
             }.start()
 

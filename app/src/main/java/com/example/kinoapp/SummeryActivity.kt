@@ -46,7 +46,7 @@ class SummaryActivity : AppCompatActivity() {
         val price :String = getsharedPreferences.getString("PRICE", "").toString()
         val name :String = getsharedPreferences.getString("NAME", "").toString()
 
-        val title: TextView = findViewById<TextView>(R.id.titleSummary)
+        val title: TextView = findViewById<TextView>(R.id.titleForm)
         title.text = movie
 
         val seatsView: TextView = findViewById<TextView>(R.id.seatsSummary)

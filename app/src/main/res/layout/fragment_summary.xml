@@ -67,7 +67,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/titleSummary"
+        android:id="@+id/titleForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -89,7 +89,7 @@
         android:layout_marginTop="25dp"
         android:text="Miejesce: A1, A2, A3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleSummary" />
+        app:layout_constraintTop_toBottomOf="@+id/titleForm" />
     <TextView
         android:id="@+id/priceSummary"
         android:layout_width="wrap_content"
