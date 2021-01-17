@@ -7,7 +7,7 @@
     android:layout_margin="15dp"
     android:background="#FFFFFF"
     android:padding="0dp"
-    tools:context=".ui.room.FormFragment">
+    tools:context=".ui.room.RoomFragment">
 
     <Button
         android:id="@+id/button23"
@@ -544,17 +544,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/seatsSummary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginBottom="100dp"
         android:text="Miejesce: A1, A2, A3"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/returnButton"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -574,7 +574,7 @@
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/returnButton"
         android:layout_width="300dp"
         android:layout_height="64dp"
         android:layout_marginStart="100dp"
@@ -588,7 +588,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/priceSummary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -596,7 +596,7 @@
         android:layout_marginBottom="25dp"
         android:text="99,99 PLN"
         android:textSize="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/returnButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

@@ -8,10 +8,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.kinoapp.MainActivity
 import com.example.kinoapp.R
-import com.example.kinoapp.ui.home.HomeFragment
-import com.example.kinoapp.ui.summary.SummaryFragment
 
 class FormFragment : Fragment() {
 
@@ -30,16 +27,16 @@ class FormFragment : Fragment() {
 //            textView.text = it
         })
 
-        val button: Button = root.findViewById(R.id.button)
+        val button: Button = root.findViewById(R.id.returnButton)
 
-        button.setOnClickListener(){
-            val newFragment = SummaryFragment()
-            val mainActivityView = (activity as MainActivity)
-            mainActivityView.supportFragmentManager.beginTransaction()
-                .replace(R.id.nav_host_fragment, newFragment)
-                .addToBackStack(null)
-                .commit()
-        }
+//        button.setOnClickListener(){
+//            val newFragment = SummaryFragment()
+//            val mainActivityView = (activity as MainActivity)
+//            mainActivityView.supportFragmentManager.beginTransaction()
+//                .replace(R.id.nav_host_fragment, newFragment)
+//                .addToBackStack(null)
+//                .commit()
+//        }
 
         return root
     }

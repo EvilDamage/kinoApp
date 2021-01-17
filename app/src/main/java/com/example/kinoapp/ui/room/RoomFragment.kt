@@ -1,5 +1,7 @@
 package com.example.kinoapp.ui.room
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,14 +10,14 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.kinoapp.MainActivity
 import com.example.kinoapp.R
-import com.example.kinoapp.ui.form.FormFragment
+import com.example.kinoapp.RoomActivity
 
 class RoomFragment : Fragment() {
 
     private lateinit var roomViewModel: RoomViewModel
 
+    @SuppressLint("ResourceType")
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
@@ -29,15 +31,11 @@ class RoomFragment : Fragment() {
 //            textView.text = it
         })
 
-        val button: Button = root.findViewById(R.id.button)
+        val button: Button = root.findViewById(R.id.returnButton)
 
         button.setOnClickListener(){
-            val newFragment = FormFragment()
-            val mainActivityView = (activity as MainActivity)
-            mainActivityView.supportFragmentManager.beginTransaction()
-                .replace(R.id.nav_host_fragment, newFragment)
-                .addToBackStack(null)
-                .commit()
+            val intent = Intent(this.context, RoomActivity::class.java)
+            this.startActivity(intent)
         }
 
         return root
