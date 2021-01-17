@@ -7,7 +7,15 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">KinoApp</string>
+    <string name="menu_room">KinoApp</string>
+    <string name="menu_gallery">KinoApp</string>
+    <string name="menu_slideshow">KinoApp</string>
+
+    <string name="home">Kub bilet</string>
+    <string name="my_tickets">Moje bilety</string>
+    <string name="my_bills">Moje Faktury</string>
+    <string name="_10_00">10:00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

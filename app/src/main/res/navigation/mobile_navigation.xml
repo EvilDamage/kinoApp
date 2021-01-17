@@ -12,14 +12,11 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.kinoapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_tickets"
+        android:name="com.example.kinoapp.ui.tickets.TicketsFragment"
+        android:label="KinoApp" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.kinoapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_invoice"
+        android:name="com.example.kinoapp.ui.invoice.InvoiceFragment"
+        android:label="KinoApp" />
 </navigation>

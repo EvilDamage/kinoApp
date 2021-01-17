@@ -1,13 +1,13 @@
-package com.example.kinoapp.ui.gallery
+package com.example.kinoapp.ui.summary
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class SummaryViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+//        value = "This is gallery Fragment"
     }
     val text: LiveData<String> = _text
 }
